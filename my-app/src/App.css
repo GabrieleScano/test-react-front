@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+
+.searchBox {
+  background-color: #34495e;
+  width: 700px;
+  height: 500px;
+  justify-content: center;
+  margin: auto;
+  box-shadow: 2px 10px 12px 1px #AEAEAE;
+  text-align: center;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.searchBox .flightInfo {
+  font-size: 26px;
+  margin: 50px 100px 10px 100px;
+  padding-top: 80px;
+  border-radius: 0.5em;
+}
+
+.searchBox .flightInfo .title {
+  padding: 18px;
+  font-size: 26px;
+  color: #34495e;
+  background-color: #EDF0F4;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.searchBox .flightInfo .results {
+  background-color: white;
+  border-radius: 0 0 0.5em 0.5em;
+  text-align: left;
+  padding: 1px;
+}
+
+.searchBox .flightInfo .results ul {
+  padding-left: 20px;
+}
+
+.searchBox .flightInfo .results li {
+  list-style: none;
+  padding: 4px;
+}
+
+.searchBox .flightInfo .dot {
+  height: 15px;
+  width: 15px;
+  background-color: #ABD2E9;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  margin-left: 3px;
+}
+
+.searchBox button {
+  font-size: 26px;
+  margin: 30px;
+  padding: 15px 35px 15px 35px;
+  border-radius: 0.3em;
+  background-color: #00bf99;
+  color: white;
+  border-color: #41b991;
+  font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+.searchBox button:hover {
+  background-color: #048f73;
+}
+
+/* Breakpoint media query tablet*/
+
+@media (max-width: 720px) {
+
+  .searchBox {
+    width: 550px;
+    height: 480px;
+    transition: 0.8s;
+  }
+
+  .searchBox .flightInfo {
+    font-size: 20px;
+    margin: 50px 80px 10px 80px;
+  }
+
+  .searchBox .flightInfo .title {
+    padding: 15px;
+    font-size: 20px;
+    color: #34495e;
+    background-color: #EDF0F4;
+    border-radius: 0.5em 0.5em 0 0;
+  }
+
+  .searchBox .flightInfo .dot {
+    height: 10px;
+    width: 10px;
+  }
+}
+
+/* Breakpoint media query mobile*/
+
+@media (max-width: 580px) {
+
+  .searchBox {
+    width: 350px;
+    height: 400px;
+    transition: 0.8s;
+  }
+
+  .searchBox .flightInfo {
+    font-size: 16px;
+    margin: 50px 10px 10px 10px;
+  }
+
+  .searchBox .flightInfo .dot {
+    height: 10px;
+    width: 10px;
+  }
+
+  .searchBox button {
+    font-size: 20px;
+  }
+}
